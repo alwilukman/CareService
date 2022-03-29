@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_menu"
+    app:startDestination="@id/menuUtamaFragment">
+
+    <fragment
+        android:id="@+id/serviceOnsite"
+        android:name="com.example.careservice.ServiceOnsite"
+        android:label="service_onsite"
+        tools:layout="@layout/service_onsite" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.careservice.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/serviceAthome"
+        android:name="com.example.careservice.ServiceAthome"
+        android:label="service_home"
+        tools:layout="@layout/service_home" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.careservice.Profile"
+        android:label="profile"
+        tools:layout="@layout/profile" />
+    <fragment
+        android:id="@+id/SOS"
+        android:name="com.example.careservice.SOS"
+        android:label="sos"
+        tools:layout="@layout/sos" />
+    <fragment
+        android:id="@+id/menuUtamaFragment"
+        android:name="com.example.careservice.MenuUtamaFragment"
+        android:label="fragment_menu_utama"
+        tools:layout="@layout/fragment_menu_utama">
+        <action
+            android:id="@+id/action_menuUtamaFragment_to_serviceAthome"
+            app:destination="@id/serviceAthome" />
+        <action
+            android:id="@+id/action_menuUtamaFragment_to_serviceOnsite"
+            app:destination="@id/serviceOnsite" />
+        <action
+            android:id="@+id/action_menuUtamaFragment2_to_SOS"
+            app:destination="@id/SOS" />
+        <action
+            android:id="@+id/action_menuUtamaFragment_to_profile"
+            app:destination="@id/profile" />
+        <action
+            android:id="@+id/action_menuUtamaFragment_to_transaksi"
+            app:destination="@id/transaksi" />
+    </fragment>
+    <fragment
+        android:id="@+id/transaksi"
+        android:name="com.example.careservice.Transaksi"
+        android:label="transaksi"
+        tools:layout="@layout/transaksi" />
+</navigation>
