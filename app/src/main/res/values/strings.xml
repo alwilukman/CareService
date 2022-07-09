@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Maps</string>
+    <string name="peta">Peta</string>
+    <string name="daihatsu">Daihatsu</string>
+    <string name="mitsubisi">Mitsubisi</string>
+    <string name="toyota">Toyota</string>
+    <string name="suzuki">Suzuki</string>
 </resources>
